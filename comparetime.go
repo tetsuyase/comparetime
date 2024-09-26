@@ -2,22 +2,22 @@ package comparetime
 
 import "time"
 
-func lessThanSign(left time.Time, right time.Time) bool {
-	return left.Before(right)
+func lessThanSign(a time.Time, b time.Time) bool {
+	return a.Before(b)
 }
 
-func lessThanOrEqualSign(left time.Time, right time.Time) bool {
-	return left.Before(right) || left.Equal(right)
+func lessThanOrEqualSign(a time.Time, b time.Time) bool {
+	return a.Before(b) || a.Equal(b)
 }
 
-func equalSign(left time.Time, right time.Time) bool {
-	return left.Equal(right)
+func equalSign(a time.Time, b time.Time) bool {
+	return a.Equal(b)
 }
 
-func greaterThanSign(left time.Time, right time.Time) bool {
-	return left.After(right)
+func greaterThanSign(a time.Time, b time.Time) bool {
+	return a.After(b)
 }
 
-func greaterThanOrEqualSign(left time.Time, right time.Time) bool {
-	return left.After(right) || left.Equal(right)
+func greaterThanOrEqualSign(a time.Time, b time.Time) bool {
+	return a.After(b) || a.Equal(b)
 }
